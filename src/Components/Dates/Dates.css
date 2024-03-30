@@ -1,0 +1,12 @@
+
+.cards-container {
+	display: flex;
+	overflow-x: hidden;
+  }
+  
+  .card {
+	display: none;
+	flex: 0 0 100%;
+	padding: 20px;
+	transition: transform 0.3s ease;
+  }

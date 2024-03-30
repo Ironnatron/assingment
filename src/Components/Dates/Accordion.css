@@ -1,0 +1,22 @@
+.accordion-item {
+  border: 1px solid;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.accordion-title {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-content {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-grow: 1; /* Allow content to grow to fill the available height */
+}
