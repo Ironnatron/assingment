@@ -1,41 +1,167 @@
-import React from 'react'
-import "./Dates.css"
+import React from "react";
+import "./Dates.css";
 import Accordion from "./Accordion";
+import Chip from "./Chip";
+
+const generalElection = [
+  {
+    title: "Phase 1",
+    date: "19 April 2024",
+    subtitle1: "102 Constituencies",
+    subtitle2: "21 States",
+  },
+  {
+    title: "Phase 2",
+    date: "26 April 2024",
+    subtitle1: "89 Constituencies",
+    subtitle2: "13 States",
+  },
+  {
+    title: "Phase 3",
+    date: "07 May 2024",
+    subtitle1: "94 Constituencies",
+    subtitle2: "12 States",
+  },
+  {
+    title: "Phase 4",
+    date: "13 May 2024",
+    subtitle1: "96 Constituencies",
+    subtitle2: "10 States",
+  },
+  {
+    title: "Phase 5",
+    date: "20 May 2024",
+    subtitle1: "49 Constituencies",
+    subtitle2: "8 States",
+  },
+  {
+    title: "Phase 6",
+    date: "25 May 2024",
+    subtitle1: "57 Constituencies",
+    subtitle2: "7 States",
+  },
+  {
+    title: "Phase 7",
+    date: "01 June 2024",
+    subtitle1: "57 Constituencies",
+    subtitle2: "8 States",
+  },
+];
+
+
+const odishaElection = [
+  {
+    title: "Phase 1",
+    date: "13 May 2024",
+    subtitle1: "All 42 ACs",
+    // subtitle2: "21 States",
+  },
+  {
+    title: "Phase 2",
+    date: "20 May 2024",
+    subtitle1: "All 42 ACs",
+    // subtitle2: "13 States",
+  },
+  {
+    title: "Phase 3",
+    date: "25 May 2024",
+    subtitle1: "All 42 ACs",
+    // subtitle2: "12 States",
+  },
+  {
+    title: "Phase 4",
+    date: "01 June 2024",
+    subtitle1: "All 42 ACs",
+    // subtitle2: "10 States",
+  },
+];
+
+const arunachalElection = [
+  {
+    title: "Phase 1",
+    date: "19 April 2024",
+    subtitle1: "All 42 ACs",
+    // subtitle2: "21 States",
+  },
+];
+
+const andhraElection = [
+  {
+    title: "Phase 1",
+    date: "13 May 2024",
+    subtitle1: "All 42 ACs",
+    // subtitle2: "21 States",
+  },
+];
 
 const Dates = () => {
-
-  const cards = [
-    { title: "Card 1", description: "Description of Card 1" },
-    { title: "Card 2", description: "Description of Card 2" },
-    { title: "Card 3", description: "Description of Card 3" }
-  ];
-
   const accordionData = [
     {
-      title: 'Section 1',
-      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-      laborum cupiditate possimus labore, hic temporibus velit dicta earum
-      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-      voluptatem.`
+      title: "GENERAL ELECTIONS TO LOK SABHA",
+      content: (
+        <>
+          <div className="grid-container">
+            {generalElection.map((value) => (
+              <div className="grid-item">
+                <Chip
+                  title={value.title}
+                  date={value.date}
+                  subtitle1={value.subtitle1}
+                  subtitle2={value.subtitle2}
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      ),
     },
     {
-      title: 'Odisha Election',
-      content:
-        <div className="cards-container">
-        {cards.map((card, index) => (
-          <div key={index} className="card">
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
+      title: "Odisha Election",
+      content: <>
+      <div className="grid-container">
+        {odishaElection.map((value) => (
+          <div className="grid-item">
+            <Chip
+              title={value.title}
+              date={value.date}
+              subtitle1={value.subtitle1}
+              // subtitle2={value.subtitle2}
+            />
           </div>
         ))}
       </div>
+    </>,
     },
     {
-      title: 'Section 3',
-      content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`
-    }
+      title: "Arunachal Pradesh",
+      content: <div className="grid-container">
+      {arunachalElection.map((value) => (
+        <div className="grid-item">
+          <Chip
+            title={value.title}
+            date={value.date}
+            subtitle1={value.subtitle1}
+            // subtitle2={value.subtitle2}
+          />
+        </div>
+      ))}
+    </div>,
+    },
+    {
+      title: "Andhra Pradesh",
+      content: <div className="grid-container">
+      {andhraElection.map((value) => (
+        <div className="grid-item">
+          <Chip
+            title={value.title}
+            date={value.date}
+            subtitle1={value.subtitle1}
+            // subtitle2={value.subtitle2}
+          />
+        </div>
+      ))}
+    </div>,
+    },
   ];
 
   return (
@@ -43,10 +169,10 @@ const Dates = () => {
       <h2>Upcoming Elections</h2>
 
       {accordionData.map(({ title, content }) => (
-          <Accordion title={title} content={content} />
-        ))}
+        <Accordion title={title} content={content} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Dates
+export default Dates;

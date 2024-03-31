@@ -1,8 +1,9 @@
 .accordion-item {
-  border: 1px solid;
   width: 100%;
   border-radius: 10px;
   margin-bottom: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .accordion-title {
@@ -14,9 +15,17 @@
   justify-content: space-between;
 }
 
+
+.accordion-title.active {
+  border-bottom: 1px solid #000;
+}
+
 .accordion-content {
   padding: 10px;
   border-top: 1px solid #ccc;
   display: flex;
-  flex-grow: 1; /* Allow content to grow to fill the available height */
+  flex-grow: 1;
+  background: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px ;
 }

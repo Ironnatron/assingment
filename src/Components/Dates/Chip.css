@@ -1,0 +1,41 @@
+.chip {
+  display: block;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 4px 8px;
+  margin-right: 8px;
+}
+
+.label {
+  margin-right: 8px;
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: #777;
+}
+
+.phase-details {
+  display: flex;
+  flex-direction: column;
+}
+
+
+h4 {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+}
