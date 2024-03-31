@@ -4,6 +4,9 @@
     transform-origin: center;
     z-index: 1;
 } */
+* {
+  font-family: "Poppins", sans-serif;
+}
 
 .svg-map__location:hover {
   fill: red;

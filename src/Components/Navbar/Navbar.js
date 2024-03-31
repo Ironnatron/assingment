@@ -12,7 +12,7 @@ const Navbar = ({ handleNavigation }) => {
       <li className="navlink-item" onClick={() => handleNavigation('Home')} >Home</li>
         <li className="navlink-item" onClick={() => handleNavigation('Parties')}>Political Parties</li>
         <li className="navlink-item" onClick={() => handleNavigation('Dates')}>Election Dates</li>
-        <li className="navlink-item" onClick={() => handleNavigation('Info')}>Voter Education</li>
+        <li className="navlink-item" onClick={() => handleNavigation('Info')}>Voter's Guide</li>
       </ul>
     </nav>
   );

@@ -1,3 +1,7 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .svg-map-container path:hover {
     fill: #ff0000;
   }

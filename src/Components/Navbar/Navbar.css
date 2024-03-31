@@ -1,5 +1,9 @@
 /* Navbar.css */
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .navbar {
     background: transparent; 
     color: #fff; 

@@ -63,7 +63,7 @@ const VotersGuide = [
 const Guide = () => {
   return (
     <div className="parties-container">
-      <h2>Voters Guide</h2>
+      <h2>Voter's Guide</h2>
 
       <div className="guide-container">
         {VotersGuide.map((value, index) => (
