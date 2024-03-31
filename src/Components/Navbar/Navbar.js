@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../App.css";
-import menu from "../../assets/images/menuicon.png"
+import menu from "../../assets/images/menuicon-66098cd66e63c.webp"
 import "./Navbar.css";
 
 const Navbar = ({ handleNavigation, toggleMobileMenu, mobileMenu }) => {

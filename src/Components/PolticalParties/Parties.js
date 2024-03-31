@@ -2,12 +2,12 @@ import React from "react";
 import "./Parties.css";
 import Tab from "./Tab";
 import Card from "./Card";
-import AAP from "../../assets/images/AAP.png";
-import BSP from "../../assets/images/bahujansamajparty.png";
-import BJP from "../../assets/images/BJP.png";
-import CPI from "../../assets/images/CPI.png";
+import AAP from "../../assets/images/aap-66098caf4015b.webp";
+import BSP from "../../assets/images/bahujansamajparty-66098cb65abd7.webp";
+import BJP from "../../assets/images/bjp-66098cbab8466.webp";
+import CPI from "../../assets/images/cpi-66098cbfc1b7c.webp";
 import Congress from "../../assets/images/Congress.svg";
-import NPP from "../../assets/images/NPP.png";
+import NPP from "../../assets/images/npp-66098cd9da513.webp";
 
 const PartyList = [
   {

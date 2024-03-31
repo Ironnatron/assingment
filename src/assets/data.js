@@ -1,4 +1,4 @@
-import BJP from "../assets/images/BJP.png";
+import BJP from "../assets/images/bjp-66098cbab8466.webp";
 const data = {
   "Andhra Pradesh": {
     "capital": "Amaravati",

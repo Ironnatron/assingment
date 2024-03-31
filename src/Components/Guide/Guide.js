@@ -1,14 +1,14 @@
 import React from "react";
 import "./Guide.css";
-import review from "../../assets/images/review.png";
-import followup from "../../assets/images/followup.png";
-import ballot from "../../assets/images/ballot.png";
-import checkinfo from "../../assets/images/checkinfo.png";
-import encourage from "../../assets/images/encourage.png";
-import needassesment from "../../assets/images/needassessment.png";
-import register from "../../assets/images/register.png";
-import research from "../../assets/images/research.png";
-import time from "../../assets/images/time.png";
+import review from "../../assets/images/review-66098cde6c3aa.webp";
+import followup from "../../assets/images/followup-66098cc19ad2f.webp";
+import ballot from "../../assets/images/ballot-66098cb78509c.webp";
+import checkinfo from "../../assets/images/checkinfo-66098cbd82d34.webp";
+import encourage from "../../assets/images/encourage-66098cc191fd9.webp";
+import needassesment from "../../assets/images/needassessment-66098cd7f412b.webp";
+import register from "../../assets/images/register-66098cdd00bf6.webp";
+import research from "../../assets/images/research-66098cddc627e.webp";
+import time from "../../assets/images/time-66098ce138042.webp";
 
 const VotersGuide = [
   {

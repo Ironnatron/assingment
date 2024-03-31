@@ -2,11 +2,10 @@ import { SVGMap } from "react-svg-map";
 import "react-svg-map/lib/index.css";
 import India from "@svg-maps/india";
 import React, { useState, useEffect } from "react";
-// import TabsInfo from "../Tabs/TabsInfo";
 import axios from "axios";
 import data from "../../assets/data";
 
-import "./Map.css"; // Import CSS file for Map component styling
+import "./Map.css";
 import Popup from "./Popup";
 import Parties from "../PolticalParties/Parties";
 import Dates from "../Dates/Dates";
