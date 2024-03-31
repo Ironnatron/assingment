@@ -10,11 +10,15 @@
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 600;
-  padding: 18px 10px;
+  padding: 18px 15px;
   display: flex;
   justify-content: space-between;
 }
 
+.accordion-icon {
+  font-size: larger;
+  font-weight: 800;
+}
 
 .accordion-title.active {
   border-bottom: 1px solid #000;
@@ -28,5 +32,15 @@
   background: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px ;
-  transition: 0.3s ease; /* Smooth transition */
+  transition: 1s ease; /* Smooth transition */
+}
+
+.accordion-content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Adjust timing here */
+}
+
+.accordion-item.active .accordion-content-wrapper {
+  max-height: 1000px; /* Adjust to your maximum possible height */
 }

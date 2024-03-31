@@ -5,7 +5,6 @@
 /* CSS for grid list passed  */
 .grid-container {
   display: grid;
-  /* grid-template-columns: auto auto; */
   padding: 10px;
 }
 .grid-item {
@@ -13,7 +12,6 @@
   font-size: 30px;
   text-align: center;
 }
-
 
 h2 {
   font-family: "Poppins";
@@ -42,8 +40,8 @@ h2 {
 }
 
 .details {
-    width: 80%;
-    text-align: start;
+  width: 80%;
+  text-align: start;
 }
 
 .logo {

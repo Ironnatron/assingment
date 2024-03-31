@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Dates.css";
 import Accordion from "./Accordion";
+
 import Chip from "./Chip";
 
 const generalElection = [
@@ -48,7 +49,6 @@ const generalElection = [
   },
 ];
 
-
 const odishaElection = [
   {
     title: "Phase 1",
@@ -95,8 +95,16 @@ const andhraElection = [
 ];
 
 const Dates = () => {
+  const [open, setOpen] = useState(false);
+  const [openAccordion, setOpenAccordion] = useState(null);
+
+  const handleAccordionClick = (accordionId) => {
+    setOpenAccordion(openAccordion === accordionId ? null : accordionId);
+  };
+
   const accordionData = [
     {
+      id: 1,
       title: "GENERAL ELECTIONS TO LOK SABHA",
       content: (
         <>
@@ -104,6 +112,7 @@ const Dates = () => {
             {generalElection.map((value) => (
               <div className="dates-grid-item">
                 <Chip
+                  open={open}
                   title={value.title}
                   date={value.date}
                   subtitle1={value.subtitle1}
@@ -116,51 +125,63 @@ const Dates = () => {
       ),
     },
     {
+      id: 2,
       title: "Odisha Election",
-      content: <>
-      <div className="dates-grid-container">
-        {odishaElection.map((value) => (
-          <div className="dates-grid-item">
-            <Chip
-              title={value.title}
-              date={value.date}
-              subtitle1={value.subtitle1}
-              // subtitle2={value.subtitle2}
-            />
+      content: (
+        <>
+          <div className="dates-grid-container">
+            {odishaElection.map((value) => (
+              <div className="dates-grid-item">
+                <Chip
+                  open={open}
+                  title={value.title}
+                  date={value.date}
+                  subtitle1={value.subtitle1}
+                  // subtitle2={value.subtitle2}
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </>,
+        </>
+      ),
     },
     {
+      id: 3,
       title: "Arunachal Pradesh",
-      content: <div className="dates-grid-container">
-      {arunachalElection.map((value) => (
-        <div className="dates-grid-item">
-          <Chip
-            title={value.title}
-            date={value.date}
-            subtitle1={value.subtitle1}
-            // subtitle2={value.subtitle2}
-          />
+      content: (
+        <div className="dates-grid-container">
+          {arunachalElection.map((value) => (
+            <div className="dates-grid-item">
+              <Chip
+                open={open}
+                title={value.title}
+                date={value.date}
+                subtitle1={value.subtitle1}
+                // subtitle2={value.subtitle2}
+              />
+            </div>
+          ))}
         </div>
-      ))}
-    </div>,
+      ),
     },
     {
+      id: 4,
       title: "Andhra Pradesh",
-      content: <div className="dates-grid-container">
-      {andhraElection.map((value) => (
-        <div className="dates-grid-item">
-          <Chip
-            title={value.title}
-            date={value.date}
-            subtitle1={value.subtitle1}
-            // subtitle2={value.subtitle2}
-          />
+      content: (
+        <div className="dates-grid-container">
+          {andhraElection.map((value) => (
+            <div className="dates-grid-item">
+              <Chip
+                open={open}
+                title={value.title}
+                date={value.date}
+                subtitle1={value.subtitle1}
+                // subtitle2={value.subtitle2}
+              />
+            </div>
+          ))}
         </div>
-      ))}
-    </div>,
+      ),
     },
   ];
 
@@ -168,8 +189,14 @@ const Dates = () => {
     <div className="parties-container">
       <h2>Upcoming Elections</h2>
 
-      {accordionData.map(({ title, content }) => (
-        <Accordion title={title} content={content} />
+      {accordionData.map(({ id, title, content }) => (
+        <Accordion
+          id={id}
+          title={title}
+          content={content}
+          opened={openAccordion === id}
+          onAccordionClick={handleAccordionClick}
+        />
       ))}
     </div>
   );

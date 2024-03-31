@@ -1,9 +1,9 @@
 import React from 'react';
 import './Chip.css';
 
-const Chip = ({ title, date, subtitle1, subtitle2 }) => {
+const Chip = ({ open, title, date, subtitle1, subtitle2 }) => {
   return (
-    <div className="chip">
+    <div className={`chip ${open ? 'loaded' : ''}`}>
       <span className="label">{title}</span>
       <div className='phase-details'>
         <h4>{date}</h4>

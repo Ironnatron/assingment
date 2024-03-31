@@ -40,3 +40,26 @@ h4 {
   font-size: 18px;
   font-weight: 500;
 }
+
+
+@keyframes gelatine {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  25% {
+    transform: scale3d(1.025, 0.975, 1);
+  }
+  50% {
+    transform: scale3d(0.975, 1.025, 1);
+  }
+  75% {
+    transform: scale3d(1.015, 0.985, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.chip.loaded {
+  animation: gelatine 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
