@@ -126,7 +126,7 @@ const Dates = () => {
     },
     {
       id: 2,
-      title: "Odisha Election",
+      title: "ODISHA ELECTION",
       content: (
         <>
           <div className="dates-grid-container">
@@ -147,7 +147,7 @@ const Dates = () => {
     },
     {
       id: 3,
-      title: "Arunachal Pradesh",
+      title: "ARUNACHAL PRADESH ELECTION",
       content: (
         <div className="dates-grid-container">
           {arunachalElection.map((value) => (
@@ -166,7 +166,7 @@ const Dates = () => {
     },
     {
       id: 4,
-      title: "Andhra Pradesh",
+      title: "ANDHRA PRADESH ELECTION",
       content: (
         <div className="dates-grid-container">
           {andhraElection.map((value) => (

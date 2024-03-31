@@ -1,18 +1,15 @@
 .svg-map-container path:hover {
-    fill: #ff0000; /* Change color to red on hover */
+    fill: #ff0000;
   }
 
 .svg-map {
     height: 80vh !important;
-    /* background: linear-gradient(to bottom, #ff9933, #ffcc66, #ff9933); Indian map gradient */
 }
 
 .container-fluid {
-  /* width: 100vw; */
   background-image: url("../src/assets/images/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* border: 2px solid; */
   height: 100vh;
 
 }
@@ -22,7 +19,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure Navbar stays on top of other content */
+  z-index: 1000;
   backdrop-filter: blur('8px');
   background: transparent;
 }
@@ -33,9 +30,8 @@
   color: white;
 }
 
-/* Adjust padding/margins of other content to make space for the fixed Navbar if needed */
 .container-fluid {
-  padding-top: 70px; /* Adjust as necessary */
+  padding-top: 70px; 
 }
 
 .parent {

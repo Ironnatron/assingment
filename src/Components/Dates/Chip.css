@@ -6,6 +6,7 @@
   padding: 4px 8px;
   margin-right: 8px;
   max-width: 150px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .label {
@@ -34,13 +35,11 @@
   flex-direction: column;
 }
 
-
 h4 {
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 500;
 }
-
 
 @keyframes gelatine {
   from {

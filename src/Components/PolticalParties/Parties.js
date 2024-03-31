@@ -14,33 +14,39 @@ const PartyList = [
     name: "Aam Aadmi Party (AAP)",
     address: "206, Rause Avenue, DDU Marg, New Delhi - 11002",
     image: AAP,
+    link: "https://aamaadmiparty.org/"
   },
   {
     name: "Bahujan Samaj Party (BSP)",
     address: "Bungalow No. 29, Lodhi Estate, New Delhi - 11003",
     image: BSP,
+    link: "https://www.bspindia.co.in/"
   },
   {
     name: "Bharatiya Janata Party (BJP)",
     address: "6-A, Deen Dayal Upadhyaya Marg, New Delhi - 11002",
     image: BJP,
+    link: "https://www.bjp.org/home"
   },
   {
     name: "Communist Party of India (CPI)",
     address:
       "A.K. Gopalan Bhawan, 27-29, Bhai Vir Singh Marg (Gole Market), New Delhi - 110001",
     image: CPI,
+    link: "https://cpim.org/"
   },
   {
     name: "Indian National Congress (INC)",
     address: "24, Akbar Road, New Delhi - 110011",
     image: Congress,
+    link: "https://www.inc.in/"
   },
   {
     name: "National People's Party (NPP)",
     address:
       "Plot No. 90A, Lachaumiere District, East Khasi Hills District, Shillong - 793001",
     image: NPP,
+    link: "https://nppindia.in/"
   },
 ];
 
@@ -49,27 +55,32 @@ const StatePartyList = [
     name: "Aam Aadmi Party (AAP)",
     address: "206, Rause Avenue, DDU Marg, New Delhi - 11002",
     image: AAP,
+    link: "https://aamaadmiparty.org/"
   },
   {
     name: "Bahujan Samaj Party (BSP)",
     address: "Bungalow No. 29, Lodhi Estate, New Delhi - 11003",
     image: BSP,
+    link: "https://www.bspindia.co.in/"
   },
   {
     name: "Bharatiya Janata Party (BJP)",
     address: "6-A, Deen Dayal Upadhyaya Marg, New Delhi - 11002",
     image: BJP,
+    link: "https://www.bjp.org/home"
   },
   {
     name: "Communist Party of India (CPI)",
     address:
       "A.K. Gopalan Bhawan, 27-29, Bhai Vir Singh Marg (Gole Market), New Delhi - 110001",
     image: CPI,
+    link: "https://cpim.org/"
   },
   {
     name: "Indian National Congress (INC)",
     address: "24, Akbar Road, New Delhi - 110011",
     image: Congress,
+    link: "https://www.inc.in/"
   },
 ];
 
@@ -85,6 +96,7 @@ const tabs = [
                 image={value.image}
                 title={value.name}
                 subtitle={value.address}
+                link={value.link}
               />
             </div>
           ))}
@@ -103,6 +115,7 @@ const tabs = [
                 image={value.image}
                 title={value.name}
                 subtitle={value.address}
+                link={value.link}
               />
             </div>
           ))}

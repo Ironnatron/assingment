@@ -8,6 +8,7 @@
   padding: 12px;
   border-radius: 10px;
   background-color: white;
+  cursor: pointer;
 }
 
 .party-card:hover {
@@ -30,13 +31,13 @@
   width: 20%;
 }
 
-h3 {
+.party-title {
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 500;
 }
 
-p {
+.party-subtitle {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 300;
