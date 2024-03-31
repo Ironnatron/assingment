@@ -20,20 +20,6 @@
   font-weight: 700;
 }
 
-.delete-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.delete-btn svg {
-  width: 16px;
-  height: 16px;
-  fill: none;
-  stroke: #777;
-}
-
 .phase-details {
   display: flex;
   flex-direction: column;
@@ -69,4 +55,62 @@
 
 .chip-subtitle {
   font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .chip {
+    display: block;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 16px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    /* max-width: 350px; */
+    width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .chip-label {
+    margin-right: 8px;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .phase-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chip-date {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  @keyframes gelatine {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+    25% {
+      transform: scale3d(1.025, 0.975, 1);
+    }
+    50% {
+      transform: scale3d(0.975, 1.025, 1);
+    }
+    75% {
+      transform: scale3d(1.015, 0.985, 1);
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  .chip.loaded {
+    animation: gelatine 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .chip-subtitle {
+    font-size: 14px;
+  }
 }

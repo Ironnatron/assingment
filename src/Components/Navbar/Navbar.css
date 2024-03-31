@@ -45,3 +45,16 @@
   .navlink-item:hover {
     text-decoration: underline; 
   }
+
+  .mobile-menu {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navlink {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }

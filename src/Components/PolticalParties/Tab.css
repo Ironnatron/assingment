@@ -35,3 +35,17 @@
     min-height: 150px;
     color: #333;
   }
+
+
+  @media screen and (max-width: 768px) {
+
+    .tab-container {
+      overflow: scroll;
+    }
+
+    .tab-content {
+      height: 100%;
+      overflow: scroll;
+      padding: 0
+    }
+  }

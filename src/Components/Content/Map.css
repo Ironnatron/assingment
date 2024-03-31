@@ -80,3 +80,34 @@
     border: 4px solid;
     padding: 5px 3px;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+  .box:nth-child(1) {
+   display: none; 
+  }
+
+  .box:nth-child(2) {
+    display: block; 
+    margin: 0;
+    padding: 2em 0;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+  .box:nth-child(1) {
+    display: none; 
+   }
+
+   /* .container {
+    display: block;
+  } */
+
+  .box:nth-child(2) {
+    display: block; 
+    margin: 0;
+    padding: 2em 0;
+   }
+}
