@@ -189,15 +189,19 @@ const Dates = () => {
     <div className="parties-container">
       <h2>Upcoming Elections</h2>
 
-      {accordionData.map(({ id, title, content }) => (
-        <Accordion
-          id={id}
-          title={title}
-          content={content}
-          opened={openAccordion === id}
-          onAccordionClick={handleAccordionClick}
-        />
-      ))}
+      <div
+        className="accordion-parent"
+      >
+        {accordionData.map(({ id, title, content }) => (
+          <Accordion
+            id={id}
+            title={title}
+            content={content}
+            opened={openAccordion === id}
+            onAccordionClick={handleAccordionClick}
+          />
+        ))}
+      </div>
     </div>
   );
 };

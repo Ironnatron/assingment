@@ -26,12 +26,22 @@
   overflow: scroll;
 }
 
+.accordion-parent {
+  height: 100%;
+  overflow: scroll;
+}
+
 @media screen and (max-width: 768px) {
   .dates-grid-container {
     display: grid;
     grid-template-columns:auto auto auto auto auto auto auto;
     padding: 10px;
     width: 100%;
+    overflow: scroll;
+  }
+
+  .accordion-parent {
+    height: 100%;
     overflow: scroll;
   }
 }

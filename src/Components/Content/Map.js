@@ -149,7 +149,7 @@ const Map = ({ currentComponent }) => {
           </div>
           {showPopup && stateName && (
             <>
-              <div className="popup-overlay" onClick={closePopup}></div>
+              <div className="popup-overlay"></div>
               <Popup stateName={stateName} onClose={closePopup} />
             </>
           )}
