@@ -3,7 +3,7 @@ import './Chip.css';
 
 const Chip = ({ open, title, date, subtitle1, subtitle2 }) => {
   return (
-    <div className={`chip ${open ? 'loaded' : ''}`}>
+    <div className={`chip ${true ? 'loaded' : ''}`}>
       <span className="label">{title}</span>
       <div className='phase-details'>
         <h4>{date}</h4>
