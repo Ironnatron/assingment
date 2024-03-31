@@ -69,8 +69,8 @@ const Guide = () => {
         {VotersGuide.map((value, index) => (
           <div className={`guide-card ${index % 2 === 0 ? 'even' : 'odd'}`}>
             <div className="details">
-              <h3>{value.title}</h3>
-              <p>{value.subtitle}</p>
+              <h3 className="guide-title">{value.title}</h3>
+              <p className="guide-para">{value.subtitle}</p>
             </div>
             <div className="logo">
               <img src={value.icon} alt={"Alternate"} height={50} width={50} />

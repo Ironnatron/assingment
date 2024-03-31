@@ -9,7 +9,7 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.label {
+.chip-label {
   margin-right: 8px;
   font-family: "Poppins";
   font-size: 24px;
@@ -35,7 +35,7 @@
   flex-direction: column;
 }
 
-h4 {
+.chip-date {
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 500;

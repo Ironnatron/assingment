@@ -1,3 +1,4 @@
+import BJP from "../assets/images/BJP.png";
 const data = {
   "Andhra Pradesh": {
     "capital": "Amaravati",
@@ -109,7 +110,8 @@ const data = {
     },
     "seats_lok_sabha": 25,
     "seats_in_rajya_sabha": 10,
-    "more_details_url": 'https://ceorajasthan.nic.in/'
+    "more_details_url": 'https://ceorajasthan.nic.in/',
+    "image": BJP
   },
   "Karnataka": {
     "capital": "Bengaluru",
@@ -405,6 +407,21 @@ const data = {
     "seats_in_rajya_sabha": 3,
     "more_details_url": 'https://ceohimachal.gov.in/'
   },
+  "Delhi": {
+    "capital": "New Delhi",
+    "chief_minister": "Arvind Kejriwal",
+    "ruling_party": "Aam Aadmi Party (AAP)",
+    "governor": "Anil Baijal",
+    "seats_in_legislative_assembly": {
+      "total": 70,
+      "ruling_party": 62,
+      "opposition": 8
+    },
+    "seats_lok_sabha": 7,
+    "seats_in_rajya_sabha": 3,
+    "more_details_url": "http://delhi.gov.in/",
+    "image": "AAP"
+}
 };
 
 export default data;

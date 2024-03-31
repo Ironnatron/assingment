@@ -7,7 +7,7 @@ const Navbar = ({ handleNavigation }) => {
 
   return (
     <nav className="navbar">
-      <span className="navbar-brand mb-0 h1">Election Hub</span>
+      <span className="navbar-brand mb-0 h1" onClick={() => handleNavigation('Home')}>Election Hub</span>
       <ul className="navlink">
       <li className="navlink-item" onClick={() => handleNavigation('Home')} >Home</li>
         <li className="navlink-item" onClick={() => handleNavigation('Parties')}>Political Parties</li>
