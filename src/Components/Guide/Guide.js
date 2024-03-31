@@ -66,8 +66,8 @@ const Guide = () => {
       <h2>Voters Guide</h2>
 
       <div className="guide-container">
-        {VotersGuide.map((value) => (
-          <div className="guide-card">
+        {VotersGuide.map((value, index) => (
+          <div className={`guide-card ${index % 2 === 0 ? 'even' : 'odd'}`}>
             <div className="details">
               <h3>{value.title}</h3>
               <p>{value.subtitle}</p>

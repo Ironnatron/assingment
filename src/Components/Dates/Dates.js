@@ -100,9 +100,9 @@ const Dates = () => {
       title: "GENERAL ELECTIONS TO LOK SABHA",
       content: (
         <>
-          <div className="grid-container">
+          <div className="dates-grid-container">
             {generalElection.map((value) => (
-              <div className="grid-item">
+              <div className="dates-grid-item">
                 <Chip
                   title={value.title}
                   date={value.date}
@@ -118,9 +118,9 @@ const Dates = () => {
     {
       title: "Odisha Election",
       content: <>
-      <div className="grid-container">
+      <div className="dates-grid-container">
         {odishaElection.map((value) => (
-          <div className="grid-item">
+          <div className="dates-grid-item">
             <Chip
               title={value.title}
               date={value.date}
@@ -134,9 +134,9 @@ const Dates = () => {
     },
     {
       title: "Arunachal Pradesh",
-      content: <div className="grid-container">
+      content: <div className="dates-grid-container">
       {arunachalElection.map((value) => (
-        <div className="grid-item">
+        <div className="dates-grid-item">
           <Chip
             title={value.title}
             date={value.date}
@@ -149,9 +149,9 @@ const Dates = () => {
     },
     {
       title: "Andhra Pradesh",
-      content: <div className="grid-container">
+      content: <div className="dates-grid-container">
       {andhraElection.map((value) => (
-        <div className="grid-item">
+        <div className="dates-grid-item">
           <Chip
             title={value.title}
             date={value.date}

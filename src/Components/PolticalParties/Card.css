@@ -1,4 +1,4 @@
-.card {
+.party-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   display: flex;
@@ -7,6 +7,7 @@
   height: 150px;
   padding: 12px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .card:hover {
@@ -18,12 +19,12 @@
   padding: 2px 16px;
 }
 
-.details {
+.party-details {
     width: 80%;
     text-align: start;
 }
 
-.logo {
+.party-logo {
   display: flex;
   margin: auto;
   width: 20%;
@@ -40,3 +41,15 @@ p {
   font-size: 16px;
   font-weight: 300;
 }
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
