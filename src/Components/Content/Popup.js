@@ -35,7 +35,6 @@ import WestBengal from "../../assets/images/Westbengal.png";
 
 //For Data
 import data from "../../assets/data";
-import { Label } from "recharts";
 
 const imageMapping = {
   
