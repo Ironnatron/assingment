@@ -1,6 +1,8 @@
 .tab-container {
     width: 100%;
+    height: 100%;
     margin: auto;
+    overflow: scroll;
   }
   
   .tab-header {
@@ -41,6 +43,7 @@
 
     .tab-container {
       overflow: scroll;
+      padding-bottom: 20px;
     }
 
     .tab-content {

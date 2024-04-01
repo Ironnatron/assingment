@@ -23,12 +23,14 @@
 }
 
 .parties-container {
-  overflow: scroll;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
 .accordion-parent {
   height: 100%;
   overflow: scroll;
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
