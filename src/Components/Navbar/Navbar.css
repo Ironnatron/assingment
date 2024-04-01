@@ -1,4 +1,3 @@
-/* Navbar.css */
 
 * {
   font-family: "Poppins", sans-serif;
@@ -39,7 +38,7 @@
   }
   
   .navlink-item:last-child {
-    margin-right: 0; /* Remove margin from last item */
+    margin-right: 0;
   }
   
   .navlink-item:hover {

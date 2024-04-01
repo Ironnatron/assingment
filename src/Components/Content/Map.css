@@ -1,9 +1,3 @@
-/* .svg-map__location {
-  transition: transform 0.2s ease-in-out; Add smooth transition
-  transition: transform 0.3s ease;
-    transform-origin: center;
-    z-index: 1;
-} */
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -21,19 +15,18 @@
 .box:nth-child(1) {
   animation-name: fadeInRight;
   animation-duration: 1s;
-  animation-fill-mode: both; /* Ensures that the element stays at the end of the animation */
+  animation-fill-mode: both;
   margin-left: 8em;
 }
 
 .box:nth-child(2) {
   /* display: flex; */
-  margin:  auto;
+  margin: auto;
   margin-right: 8em;
   /* margin-top: 5em */
   animation-name: fadeInLeft;
   animation-duration: 1s;
-  animation-fill-mode: both; /* Ensures that the element stays at the end of the animation */
-  
+  animation-fill-mode: both;
 }
 
 .heading {
@@ -49,7 +42,6 @@
   font-size: 18px;
 }
 
-
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -60,7 +52,6 @@
     transform: translateX(0);
   }
 }
-
 
 @keyframes fadeInRight {
   from {
@@ -74,11 +65,11 @@
 }
 
 .brand {
-  font-size: 2.5rem; 
-    font-weight: 900;
-    color: black;
-    border: 4px solid;
-    padding: 5px 3px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: black;
+  border: 4px solid;
+  padding: 5px 3px;
 }
 
 @media screen and (max-width: 768px) {
@@ -86,28 +77,24 @@
     display: block;
   }
   .box:nth-child(1) {
-   display: none; 
+    display: none;
   }
 
   .box:nth-child(2) {
-    display: block; 
+    display: block;
     margin: 0;
     padding: 2em 0;
-   }
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .box:nth-child(1) {
-    display: none; 
-   }
-
-   /* .container {
-    display: block;
-  } */
+    display: none;
+  }
 
   .box:nth-child(2) {
-    display: block; 
+    display: block;
     margin: 0;
     padding: 2em 0;
-   }
+  }
 }

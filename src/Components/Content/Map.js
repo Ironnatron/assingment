@@ -34,7 +34,7 @@ const Map = ({ currentComponent }) => {
 
   const onLocationClick = (event) => {
     setStateName(event.target.getAttribute("name"));
-    setShowPopup(true); // Show popup on click
+    setShowPopup(true); 
     setLocationClick(true);
     console.log("Name", event.target.getAttribute("name"));
   };
@@ -53,12 +53,12 @@ const Map = ({ currentComponent }) => {
       event.target.style.transform = "";
     });
 
-    // Create tooltip element
+    // tooltip element
     createTooltip(event, stateName);
   };
 
   const createTooltip = (event, stateName) => {
-    // Create a div element for the tooltip
+    // div element for the tooltip
     var divElement = document.createElementNS(
       "http://www.w3.org/1999/xhtml",
       "div"
@@ -79,6 +79,8 @@ const Map = ({ currentComponent }) => {
     divElement.style.top = event.clientY + window.scrollY + "px";
     divElement.style.zIndex = "9999";
 
+
+    //Adding multiple line text to the tooltip
     divElement.innerHTML = `
     <div>
     <p style="font-size: 16px, font-weight: 500,font-family: Poppins">${stateName}</p>

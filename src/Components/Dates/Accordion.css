@@ -40,9 +40,9 @@
 .accordion-content-wrapper {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease; /* Adjust timing here */
+  transition: max-height 0.5s ease;
 }
 
 .accordion-item.active .accordion-content-wrapper {
-  max-height: 1000px; /* Adjust to your maximum possible height */
+  max-height: 1000px; 
 }
